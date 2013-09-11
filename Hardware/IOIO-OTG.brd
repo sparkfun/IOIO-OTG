@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -35812,7 +35812,7 @@ design rules under a new name.</description>
 <element name="R4" library="Testing" package="TRIMPOT_5MM" value="TRIMPOTSMD_STANDARD" x="46.99" y="13.97" rot="R90"/>
 <element name="TP2" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="41.91" y="6.35" rot="MR0"/>
 <element name="TP3" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="39.37" y="6.35" rot="MR0"/>
-<element name="TP4" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="63.373" y="15.24" rot="MR0"/>
+<element name="TP4" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="63.5" y="15.24" rot="MR180"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -36769,7 +36769,7 @@ design rules under a new name.</description>
 <contactref element="TP4" pad="P$1"/>
 <via x="62.2554" y="15.2146" extent="1-16" drill="0.508"/>
 <wire x1="62.2554" y1="15.2146" x2="63.3476" y2="15.2146" width="0.254" layer="16"/>
-<wire x1="63.3476" y1="15.2146" x2="63.373" y2="15.24" width="0.254" layer="16"/>
+<wire x1="63.3476" y1="15.2146" x2="63.5" y2="15.24" width="0.254" layer="16"/>
 </signal>
 <signal name="VBUS">
 <contactref element="U1" pad="34"/>
