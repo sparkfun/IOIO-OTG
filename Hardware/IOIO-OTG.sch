@@ -11854,6 +11854,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW&quot;"/>
 <part name="R4" library="Testing" deviceset="TRIMPOT" device="SMD_STANDARD"/>
+<part name="TP2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
+<part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
+<part name="TP4" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -12001,7 +12004,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="U$6" gate="G$1" x="5.08" y="7.62"/>
 <instance part="U4" gate="G$1" x="254" y="53.34" rot="MR180"/>
 <instance part="U2" gate="G$1" x="111.76" y="228.6"/>
-<instance part="TP1" gate="G$1" x="309.88" y="38.1" rot="R180"/>
+<instance part="TP1" gate="G$1" x="269.24" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="271.78" y="58.42" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="C9" gate="G$1" x="248.92" y="226.06"/>
 <instance part="C10" gate="G$1" x="78.74" y="226.06"/>
 <instance part="C6" gate="G$1" x="160.02" y="228.6"/>
@@ -12016,6 +12021,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </instance>
 <instance part="R4" gate="R?" x="332.74" y="233.68" smashed="yes" rot="MR270">
 <attribute name="NAME" x="335.026" y="235.9914" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="TP2" gate="G$1" x="269.24" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="271.78" y="50.8" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="TP3" gate="G$1" x="269.24" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="271.78" y="43.18" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="TP4" gate="G$1" x="269.24" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="271.78" y="35.56" size="1.778" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -12950,6 +12964,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <label x="203.2" y="55.88" size="1.778" layer="95"/>
 <pinref part="U4" gate="G$1" pin="D-"/>
 </segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="53.34" x2="271.78" y2="53.34" width="0.1524" layer="91"/>
+<label x="271.78" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D+" class="0">
 <segment>
@@ -12957,6 +12976,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="U1" gate="G$1" pin="D+/CN83/RG2"/>
 <label x="203.2" y="53.34" size="1.778" layer="95"/>
 <pinref part="U4" gate="G$1" pin="D+"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="45.72" x2="271.78" y2="45.72" width="0.1524" layer="91"/>
+<label x="271.78" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -13071,6 +13095,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="78.74" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="68.58" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TP4" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="38.1" x2="271.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="271.78" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -13089,8 +13118,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </segment>
 <segment>
 <pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="38.1" x2="312.42" y2="38.1" width="0.1524" layer="91"/>
-<label x="312.42" y="38.1" size="1.778" layer="95"/>
+<wire x1="269.24" y1="60.96" x2="271.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="271.78" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
