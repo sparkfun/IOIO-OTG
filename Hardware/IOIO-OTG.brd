@@ -36055,6 +36055,12 @@ design rules under a new name.</description>
 <wire x1="52.589" y1="22.868621875" x2="52.597621875" y2="22.86" width="0.254" layer="1"/>
 <wire x1="53.092540625" y1="22.737459375" x2="52.589" y2="23.241" width="0.254" layer="1"/>
 <contactref element="Q2" pad="2"/>
+<via x="52.324" y="17.526" extent="1-16" drill="0.381" diameter="0.889"/>
+<via x="53.34" y="17.526" extent="1-16" drill="0.381" diameter="0.889"/>
+<via x="54.356" y="17.526" extent="1-16" drill="0.381" diameter="0.889"/>
+<wire x1="54.356" y1="17.526" x2="54.104540625" y2="17.56918125" width="0" layer="19" extent="1-1"/>
+<wire x1="53.602703125" y1="18.8069" x2="54.1027" y2="18.8069" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="17.526" x2="53.594" y2="17.526" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P7">
 <contactref element="R8" pad="2"/>
